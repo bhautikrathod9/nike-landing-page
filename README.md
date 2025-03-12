@@ -1,12 +1,52 @@
-# React + Vite
+ Nike Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Nike landing page built using React and Tailwind CSS to polish frontend development skills.
 
-Currently, two official plugins are available:
+ 🚀 Features
+- Fully responsive design
+- Clean and minimal UI
+- Smooth animations
+- Tailwind CSS for styling
+- Reusable React components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 📸 Preview
+[Add a screenshot or a demo link here]
 
-## Expanding the ESLint configuration
+ 🛠️ Tech Stack
+- React - For building the UI components
+- Tailwind CSS - For styling and responsiveness
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 🚀 Getting Started
+ 1️⃣ Clone the repository
+git clone https://github.com/your-username/nike-landing-page.git
+cd nike-landing-page
+
+ 2️⃣ Install dependencies
+yarn install or npm install
+
+ 3️⃣ Start the development server
+yarn dev or npm run dev
+
+The project will be available at http://localhost:5173/ (if using Vite).
+
+ 📌 Deployment
+To deploy the project:
+yarn build or npm run build
+
+Then, deploy the dist/ folder using Vercel, Netlify, or GitHub Pages.
+
+ 🎯 To-Do
+- [ ] Improve animations
+- [ ] Add dark mode support
+- [ ] Optimize images for performance
+
+ 🤝 Contribution
+Feel free to fork this repository and improve the project. PRs are welcome! 🚀
+
+ 📜 License
+This project is open-source and available under the MIT License.
+
+---
+
+🔥 Happy Coding! 🔥
+
