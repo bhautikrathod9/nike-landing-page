@@ -10,7 +10,7 @@ A modern, responsive Nike landing page built using React and Tailwind CSS to pol
 - Reusable React components
 
  📸 Preview
-[Add a screenshot or a demo link here]
+https://nike-landing-page-bhautik.vercel.app/
 
  🛠️ Tech Stack
 - React - For building the UI components
