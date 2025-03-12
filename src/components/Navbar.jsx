@@ -25,7 +25,7 @@ const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className='font-montserrat leading-normal text-lg text-slate-gray'
+                className='font-montserrat leading-normal text-lg text-slate-gray hover:text-black'
               >
                 {item.label}
               </a>
@@ -41,13 +41,13 @@ const Navbar = () => {
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />
         </div>
       </nav>
-      <div className={`fixed top-0 right-0 h-full w-50 bg-white shadow-lg transition-transform duration-600 ease-in-out ${isNavOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-full w-50 bg-white shadow-lg transition-transform duration-6000 ease-in-out ${isNavOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <ul className='flex flex-col justify-center items-center gap-4 p-10'>
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className='font-montserrat leading-normal text-lg text-slate-gray'
+                className='font-montserrat leading-normal text-lg text-slate-gray hover:text-black'
                 onClick={() => setIsNavOpen(false)} // Close the nav when a link is clicked
               >
                 {item.label}
