@@ -3,13 +3,13 @@ import { headerLogo } from '../assets/images'
 import { navLinks } from '../constants'
 import { hamburger } from '../assets/icons'
 
-const Navbar = () => {
+const Navbar = ({toggleTheme}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => {
     setIsNavOpen((prev) => !prev)
   }
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    <header className='padding-x py-8 absolute z-10 w-full '>
       <nav className='flex justify-between items-center max-container'>
         <a href='/'>
           <img

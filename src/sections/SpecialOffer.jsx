@@ -4,14 +4,14 @@ import  Button  from "../components/Button";
 
 const SpecialOffer = () => {
   return (
-    <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container'>
+    <section className='flex group justify-between items-center max-xl:flex-col-reverse gap-10 max-container'>
       <div className='flex-1'>
         <img
           src={offer}
           alt='Shoe Promotion'
           width={773}
           height={687}
-          className='object-contain w-full'
+          className='object-contain w-full transition-transform duration-300 ease-in-out group-hover:scale-105 '
         />
       </div>
       <div className='flex flex-1 flex-col'>

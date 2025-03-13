@@ -1,8 +1,10 @@
 import React from 'react'
 import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from './sections' 
+import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 
 const App = () => {
+
   return (
     <main className='relative'>
       <Navbar />
