@@ -4,12 +4,23 @@ import { arrowRight } from '../assets/icons'
 import { shoes, statistics } from "../constants";
 import { bigShoe1 } from '../assets/images';
 import ShoeCard from '../components/ShoeCard';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
 
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.1, // 10% of the element must be visible
+  });
+
   return (
-    <section
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
       id='home'
       className='w-full flex xl:flex-row flex-col justify-center gap-10 min-h-screen max-container'
     >
@@ -61,7 +72,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

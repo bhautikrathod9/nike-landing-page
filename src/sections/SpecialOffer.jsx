@@ -1,10 +1,21 @@
 import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 import  Button  from "../components/Button";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const SpecialOffer = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.1, 
+  });
   return (
-    <section className='flex group justify-between items-center max-xl:flex-col-reverse gap-10 max-container'>
+    <motion.section 
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      className='flex group justify-between items-center max-xl:flex-col-reverse gap-10 max-container'>
       <div className='flex-1'>
         <img
           src={offer}
@@ -40,7 +51,7 @@ const SpecialOffer = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
