@@ -1,13 +1,22 @@
 import { arrowRight } from "../assets/icons";
 import { shoe8 } from "../assets/images";
 import Button from '../components/Button';
-import {useState, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const SuperQuality = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.1, // 10% of the element must be visible
+  });
   return (
-    <section
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
       id='about-us'
-      className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container relative group transition-transform duration-300 ease-in-out overflow-hidden'
+      className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container relative group'
     >
       <div className='flex flex-1 flex-col'>
         <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
@@ -37,7 +46,7 @@ const SuperQuality = () => {
           className='object-contain '
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

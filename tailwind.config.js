@@ -22,6 +22,15 @@ export default {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      animation: {
+        fadeIn: 'fadeIn 2s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
       colors: {
         'primary': "#ECEEFF",
         "coral-red": "#FF6452",
